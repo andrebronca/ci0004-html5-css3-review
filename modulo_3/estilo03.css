@@ -5,3 +5,34 @@ body{
     margin: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif
 }
+table {
+    width: 600px;
+    padding: 0px;
+    /*border: 1px solid #464545; */
+    /*border-radius: 5px;*/
+}
+table thead th {
+    background-color: grey;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+table td {
+    /*border: 1px solid #b9b9b9; */
+}
+table tbody td {
+    /*background-color: rgb(129, 172, 212);*/
+    border-bottom: 1px solid gray;
+}
+/* fazer estilo para zebrar a tabela */
+tbody tr:nth-child(even){
+    background-color: rgb(248, 248, 160);
+}
+/* seleciona a linha ao passar o mouse em cima */
+tbody tr:hover {
+    background-color: #7676d4;
+}
+th {
+    font-weight: normal;
+}
