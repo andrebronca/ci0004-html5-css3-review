@@ -1,0 +1,21 @@
+body {
+    margin: 0px;
+}
+.ex01 {
+    border: 1px solid green;
+    padding: 10px;
+    margin: 20px;
+    background-color: #b3aeae;
+}
+.ex02 {
+    background-color: rgb(243, 243, 151);
+    width: 100%;
+    height: 30px;
+}
+.menu {
+    background-color: #6363f5;
+    height: 40px;
+    width: auto;
+    color: white;
+    font-weight: bold;
+}

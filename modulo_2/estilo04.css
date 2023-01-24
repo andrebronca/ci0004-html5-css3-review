@@ -1,0 +1,23 @@
+body {
+    margin: 0px;
+}
+.exemplo {
+    background-color: black;
+    height: 100px;
+}
+#logo1 {
+    width: 200px;  /* +- 5,5cm = 200px */
+    border: 1px solid black;
+}
+.box-logo {
+    width: 30%;
+    height: 100px;
+    background-color: blanchedalmond;
+    border: 1px solid black;
+}
+.logo2 {
+    /* nesse exemplo o tamanho será o percentual do elemento que contém esta clase */
+    width: inherit; /* herda do item que contém essa classe */
+    min-width: 100px;
+    max-width: 400px;
+}
