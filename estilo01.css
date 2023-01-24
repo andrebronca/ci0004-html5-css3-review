@@ -1,3 +1,40 @@
+/* selecionando elemento */
+h1{
+    color: red;
+}
+h2{
+    color:blueviolet;
+}
+a {
+    color: green;
+}
+li {
+    font-weight: bold;
+    color: chocolate;
+}
 h3{
     color: crimson;
+}
+/* selecionando por id do elemento */
+#subtitulo {
+    color:chartreuse;
+}
+#listas{
+    color: darkolivegreen;
+}
+/* selecionando por atributo class no elemento */
+.paragrafo {
+    color: darkorange;
+}
+/* unindo propriedades com uma configuração padrão */
+h1, #titulo {
+    font-size: 24px;
+}
+ul, .paragrafo {
+    font-size: medium;
+}
+/* selecionando um elemento dentro de outro elemento */
+p strong {
+    color: black;
+    font-weight: bold;
 }
