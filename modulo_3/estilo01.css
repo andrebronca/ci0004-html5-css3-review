@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+p {
+    color: #00008b;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px;
+    padding: 10px;
+}
+.maiusculo {
+    text-transform: uppercase;
+}
+.outros {
+    letter-spacing: 2px; /* espaço entre as letras */
+    word-spacing: 3px; /* espaço entre palavras */
+    line-height: 25px; /* altura da linha */
+    text-shadow: 1px 2px 3px black ; /* posição baixo esfumaçado cor */
+    font-family: 'Dancing Script', cursive;
+}
+h1 {
+    font-family: 'Courgette', cursive;
+}
+.alinha-direita {
+    text-align: right;
+}
+.alinha-esquerda {
+    text-align: left; /* padrão */
+}
+.alinha-centro {
+    text-align: center;
+}
+.alinha-pagina {
+    text-align: justify;
+}
+.riscar-texto {
+    text-decoration: line-through;
+}
+a {
+    text-decoration: none;
+    background-color: #b9b5b5;
+}
+a:hover {
+    text-decoration: underline;
+    color: white;
+}

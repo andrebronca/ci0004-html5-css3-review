@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 10px;
+    font-family: 'Cedarville Cursive', cursive;
+}
+.marca-lista1 {
+    list-style-type: square; /*<ul> disc (padrao), square, circle, none */
+}
+.marca-lista2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
