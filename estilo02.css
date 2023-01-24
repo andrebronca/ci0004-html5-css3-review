@@ -1,0 +1,48 @@
+#titulo {
+    background-color: rgb(199, 247, 231);
+}
+#subtitulo{
+    background-color: #00ffff;
+    color: rgb(10, 88, 88);
+}
+#listas{
+    background-color: hsl(160, 100%, 75%);
+}
+strong {
+    border:  1px solid #4e44d1;
+}
+.paragrafo {
+    border: 1px dotted #1f1792;
+}
+.picotado {
+    border: 1px dashed black;
+}
+.linha-dupla {
+    border: 3px double black;
+}
+.linha-dupla2 {
+    border: 4px double rgb(47, 185, 240);
+}
+.linha-dupla3 {
+    border: 8px groove rgb(47, 185, 240);
+}
+.borda-esquerda {
+    margin-left: 10px;
+    padding-left: 5px;
+    border-left: 3px dotted saddlebrown;
+}
+.borda-curva {
+    background-color: bisque;
+    border-radius: 5px;
+    padding-left: 3px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    border: 1px solid #e49330;
+}
+.circulo {
+    background-color: #43ec43;
+    width: 30px;
+    height: 30px;
+    border-radius: 16px;
+    border: 2px solid green;
+}
