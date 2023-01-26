@@ -1,0 +1,33 @@
+/* testando com imagens grandes */
+.img01 { /* distorce a imagem */
+    width: 300px;
+    height: 300px;
+}
+.img02 {
+    width: 300px; /* mantém a proporção */
+}
+.img03 {
+    width: 300px;
+    height: 300px;
+    object-fit: fill; /* força a imagem */
+}
+.img04 {
+    width: 300px;
+    height: 300px;
+    object-fit: contain; /* mantém a proporção */
+}
+.img05 {
+    width: 300px;
+    height: 300px;
+    object-fit: cover; /* corta a imagem sem distorcer */
+}
+.img06 {
+    width: 300px;
+    height: 300px;
+    object-fit: none; /* corta uma parte da imagem */
+}
+.img07 {
+    width: 300px;
+    height: 300px;
+    object-fit: scale-down; /*  */
+}
