@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 05</title>
+    <link rel="stylesheet" href="estilo05.css">
+</head>
+<body>
+    <h1 class="alinha-centro">Formulário</h1>
+    <div class="div-form">
+        <!--com tag file tem que adicionar o enctype-->
+        <form method="post" action="#" enctype="multipart/form-data">
+            <input type="hidden" name="pais" value="BR">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <label>
+                    Nome<br>
+                    <input type="text" name="nome" required minlength="3" maxlength="100">
+                </label>
+                <label>
+                    Sobrenome<br>
+                    <input type="text" name="sobrenome" required>
+                </label>
+                <label>
+                    Email<br>
+                    <input type="text" name="email" required 
+                    pattern="(^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)"
+                    title="Endereço de e-mail">
+                </label>
+                <label>
+                    Foto<br>
+                    <input type="file" name="foto" accept="image/*" >
+                    <!--selecionando conforme o mime-type -->
+                    <input type="file" name="foto" accept="application/pdf" >
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Dados profissionais</legend>
+                <label>
+                    Empresa<br>
+                    <input type="text" name="empresa">
+                </label>
+                <label>
+                    Cargo<br>
+                    <input type="text" name="cargo">
+                </label>
+            </fieldset>
+            <input class="btn-submit" type="submit" value="Cadastrar">
+        </form>
+    </div>
+</body>
+</html>

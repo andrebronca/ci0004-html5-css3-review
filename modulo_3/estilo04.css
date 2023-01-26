@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+label {
+    display: block; /* padrão é inline. nesse caso fica como uma div */
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+input[type=text],[type=password], textarea, select {
+    padding: 2px;
+    width: 200px;
+    font-size: 16px;
+    border: 1px solid rgb(99, 95, 95);
+    /* ao clicar no campo aparece uma borda azul
+    que é a: outline, defininco como zero será desativada */
+    outline: 0;
+    margin-top: 3px;
+}
+textarea {
+    height: 60px;
+    width: 400px;
+    /* desativar o redimensionamento com o mouse */
+    resize: none;
+}
+.termos-link {
+    color: black;
+    text-decoration: none;
+}
+.termos-link:hover {
+    text-decoration: underline;
+    color: blue;
+}
+button {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    background-color: bisque;
+}
+button:hover {
+    color: blue;
+    background-color: white;
+}

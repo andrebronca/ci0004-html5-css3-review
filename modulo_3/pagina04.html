@@ -5,17 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página 04</title>
-    <link rel="stylesheet" href="estilo03.css">
+    <link rel="stylesheet" href="estilo04.css">
 </head>
 <body>
     <h1 class="alinha-centro">Formulário</h1>
     <form action="../modulo_2/arq05.html" method="get">
-        <input type="text" name="usuario">
+        <label for="usuario">Usuário</label>
+        <input type="text" name="usuario" id="usuario"><br>
+        <label><strong>CEP</strong><!--outra forma de uso do label-->
+            <input type="number" name="numero">
+        </label><br>
+        <input type="range" name="faixa" min="0" max="5">
         <input type="email" name="email">
-        <input type="password">
-        <input type="checkbox">
+        <input type="color" name="cor">
+        <input type="date" name="data">
+        <input type="time" name="hora">
+        <input type="week" name="semana"><!-- nao funcionou no mozilla -->
+        <input type="month" name="mes"><!-- nao funcionou no mozilla -->
+        <input type="datetime-local" name="data_hora">
+        <input type="password" name="senha"><br>
+        <input type="checkbox" name="receber_email" id="receber_email">
+        <label for="receber_email">Desejo receber e-mail</label><br>
         <input type="radio" name="sexo" value="M">
         <input type="radio" name="sexo" value="F">
+        <hr>
+        <select name="ordem">
+            <option value="0">Menor valor que</option>
+            <option value="1" selected>Maior valor que</option>
+            <option value="2">Valores iguais a</option>
+        </select>
+        <input type="number" name="ordem_valor"><br>
+        <label>
+            Linguagem de programação<br>
+            <select name="categoria[]" size="2" multiple>
+                <option></option>
+                <option value="0">Java</option>
+                <option value="1">Python</option>
+                <option value="2">Javascript</option>
+            </select>
+        </label>
+        <hr>
+        <!-- nao recomendavel usar rows e cols, usar css para controle-->
+        <textarea name="observacao"></textarea>
+        <br>
+        <!-- serve como submit dentro do form, outras ações fora do formulario-->
+        <button>Postar</button><br>
+        <p>Acessar os termos <a class="termos-link" href="https://www.google.com.br" target="_blank">Google</a></p>
         <input type="submit" value="Enviar">
     </form>
 </body>
