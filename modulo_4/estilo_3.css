@@ -1,0 +1,26 @@
+.box {
+    width: 50%;
+    height: 100px;
+    background-color: #808080;
+    margin-bottom: 10px;
+}
+.box2 {
+    width: 50%;
+    height: 100px;
+    background-color: #647ef1;
+    margin-bottom: 10px;
+}
+.box-interno {
+    width: 50%;
+    height: 50%;
+    background-color: #edf1aa;
+}
+/* a medida 'ex' se baseia pelo tamanho da fonte dentro do elemento.
+pouco utilizada e mais difícil de ajustar.
+a medida 'ch' se baseia pelo tamanho do espaço das fontes monoespaçadas.
+*/
+.box-interno2 {
+    width: 20ex;
+    height: 20ex;
+    background-color: #edf1aa;
+}

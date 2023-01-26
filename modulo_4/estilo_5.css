@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+}
+.box {
+    font-size: 15px;
+    color: hwb(240 0% 0%);
+}
+h1 {
+    font-size: 30px;
+    border: 1px solid currentColor;
+    /* currentColor vai pegar a cor do elemento ou elemento superior */
+}
+.box h1 {
+    font-size: inherit;
+}

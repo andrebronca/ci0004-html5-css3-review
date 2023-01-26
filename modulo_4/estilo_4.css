@@ -1,0 +1,13 @@
+/* trabalhando com viewport que é o espaço visível da tela para o  usuário. */
+body {
+    margin: 0;
+}
+.box {
+    background-color: gray;
+    height: 100vh; /* usar 100% da altura do viewport */
+    width: 100vw; /* usar 100% da largura do viewport */
+    /*
+    vmin: se baseia pela medida mínima do viewport (pouco usado)
+    vmax: se baseia pela medida máxima do viewport (pouco usado)
+    */
+}
