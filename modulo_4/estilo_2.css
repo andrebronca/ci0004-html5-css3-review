@@ -1,0 +1,18 @@
+.box {
+    font-size: 20px;
+}
+.box-interno {
+    /* o tamanho exterior é de 20px.
+    o tamanho interno é de 10em.
+    1em = 20px, logo, 10em = 200px
+    */
+    width: 10em;
+    height: 10em;
+    background-color: #b8b4b4;
+}
+/* ao usar o 'rem' em vez de 'em', ocorre a configuração conforme o 
+elemento raiz.
+ex. definir a tag 'html' com font-size: 10px
+o 'rem' irá usar a configuração da tag raiz, 'html', com isso
+1rem será 10px, 2rem = 20px.
+*/

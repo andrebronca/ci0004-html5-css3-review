@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+}
+/* conceito de especificidade */
+/* usando class se torna mais específica  */
+.container {
+    width: calc(100% - 20px);
+    height: 200px;
+    background-color: #ccc;
+    /* conceito de herança */
+    color: red; /* o que estiver dentro de container vai herdar essa configuração */
+}
+/* aplica de forma geral a div que não usar um class específico */
+div {
+    color: blue;
+}
+.container strong {
+    color: blue;
+}
+.container2 {
+    width: 100px; /* unidade absoluta de medida */
+    height: 100px; /* px, pt, in, cm, mm */
+    background-color: gray;
+}
