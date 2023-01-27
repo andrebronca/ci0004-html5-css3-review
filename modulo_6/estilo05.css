@@ -1,0 +1,21 @@
+/* criando os quadros de animação */
+@keyframes anim1 {
+    0% {background-color: red; top: 0; left: 0;}
+    25% {background-color: yellow; top: 0;}
+    50% {background-color: blue;top: 0; }
+    75% {background-color: gray;top: 0; }
+    100% {background-color: greenyellow;top: 0;left: calc(100% - 150px);}
+}
+
+body {
+    margin: 0;
+}
+.exemplo {
+    width: 150px;
+    height: 150px;
+    position: absolute; /* para o objeto ficar flutuante */
+    background-color: green;
+    animation-name: anim1;
+    animation-duration: 6s;
+    animation-iteration-count: 2;
+}
