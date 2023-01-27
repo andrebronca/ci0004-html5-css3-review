@@ -1,0 +1,30 @@
+/* trabalhando com variáveis no css, configurando a partir da raiz do documento */
+:root {
+    --bg-color-principal: #ffffef;
+    --color-texto: #000000;
+    --bg-color-div: #a1a1e2;
+    --font-size: 25px;
+    /*--font-size-big: 25px;
+    --font-size-small: 15px; */
+}
+body {
+    background-color: var(--bg-color-principal);
+    font-size: var(--font-size);
+}
+h1 {
+    color: blue;
+}
+.container {
+    background-color: var(--bg-color-div);
+    color: var(--color-texto, #000000); /* se não achar uma usa a segunda */
+}
+@media (max-width: 450px) {
+    :root {
+        --font-size: 15px;
+    }
+    /* é uma forma de resolver, mas arcaica
+    body {
+        font-size: var(--font-size-small);
+    }
+    */
+}

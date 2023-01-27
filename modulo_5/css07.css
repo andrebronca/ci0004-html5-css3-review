@@ -1,0 +1,4 @@
+img {
+    /* vai ser o tamanho de 50% da tela ou no máximo 200px)
+    width: max(50%, 200px); /* pode ser usado o min() */
+}

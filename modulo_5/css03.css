@@ -19,3 +19,15 @@ body {
         font-size: 15px;
     }
 }
+/* somente quando for imprimir a página */
+@media only print {
+    body {
+        background-color: white;
+    }
+    .titulo-h1 {
+        display: none;
+    }
+}
+@media only screen {
+    /* só o que deve aparecer na tela */
+}

@@ -1,0 +1,41 @@
+body {
+    display: flex;
+}
+
+/* ao mudar a orientação da tela, as divs (caixas) se reposicionam */
+div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 3px;
+}
+/* funciona de acordo com o tamanho da tela disponível, não detecta a orientação */
+/* orientação horizontal */
+@media (orientation: landscape) {
+    body {
+        flex-direction: row;
+    }
+}
+/* orientação vertical */
+@media (orientation: portrait) {
+    body {
+        flex-direction: column;
+    }
+}
+/* aplica somente quando a tela está na proporção de quadrado perfeito */
+@media (aspect-ration: 1/1) {
+    body {
+        color: red;
+    }
+}
+/* aplica somente quando a tela está na proporção de largura(3) e altura(2) */
+@media (min-aspect-ration: 3/2) {
+    body {
+        color: aqua;
+    }
+}
+@media (max-aspect-ration: 2/4) {
+    body {
+        color: aquamarine.
+    }
+}
