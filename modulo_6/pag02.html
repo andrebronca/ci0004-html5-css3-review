@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 2</title>
+    <link href="estilo02.css" rel="stylesheet">
+</head>
+<body>
+    <!-- campos novos de input no html5 -->
+    <form method="post" accept="#">
+        <!--no mozilla não funciona com o recurso de apagar o texto-->
+        <input type="search" name="buscar" placeholder="Buscar..."><br>
+        <!-- fazendo com que o campo já seja selecionado para inserção -->
+        <input type="text" name="usuario" placeholder="Usuário" autofocus><br>
+        <input type="email" name="email" required placeholder="e-mail"><br>
+        <!--types:
+            url, tel, number, range (min="" max=""), 
+            date, month, week, time, datetime-local, color
+        -->
+        <input type="submit" name="enviar">
+    </form>
+</body>
+</html>
