@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- social sharing 
+    quando quer compartilhar uma página no facebook, uma notícia, etc.
+    pra testar no facebook, tem que estar online o site.
+    irá ler as tags 'meta'
+    https://developers.facebook.com/docs/reference/opengraph
+    exemplo com um type article
+    tamanho padrão de imagem para o facebook 1200x630, no máximo 5MB
+    -->
+    <meta property="og:url" content="url-dessa-pagina-quando-online">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Título do artigo">
+    <meta property="og:description" content="descrição do artigo">
+    <meta property="og:image" content="url-da-imagem">
+    <title>Página 5</title>
+    <link href="estilo06.css" rel="stylesheet">
+</head>
+<body>
+    <!--aplicar quebra de linha -->
+    <p class="exemplo">It is a long established fact that a reader will be distracted by the readable contentofapagewhenlookingatits layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</p>
+    <hr>
+    <!-- web-semântica 
+        listas de descrição boas para mecanismos de busca -->
+    <dl>
+        <dt>Café</dt>
+            <dd>Cor do café é quase preto</dd>
+        <dt>Água</dt>
+            <dd>Se limpa não tem cor, ou seja é transparente</dd>
+        <dt>Açúcar</dt>
+            <dd>
+                <ul>
+                    <li>branco</li>
+                    <li>mascavo</li>
+                </ul>
+            </dd>
+    </dl>
+    <hr>
+    <!-- citação '<q>' curtas -->
+    <p>
+        It is a long established fact that a reader will be distracted by the readable contentofapagewhenlookingatits layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', <q>making it look like readable English</q>.
+    </p>
+    <!-- citação longa, motor de busca identifica o link -->
+    <p>
+        It is a long established fact that a reader will be distracted by the readable contentofapagewhenlookingatits layout. 
+        <blockquote cite="https://www.lipsum.com/"> 
+            point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+        </blockquote>
+        It is a long established fact that a reader will be distracted by the readable contentofapagewhenlookingatits layout. 
+    </p>
+</body>
+</html>
