@@ -4,7 +4,7 @@
     25% {background-color: yellow; top: 0;}
     50% {background-color: blue;top: 0; }
     75% {background-color: gray;top: 0; }
-    100% {background-color: greenyellow;top: 0;left: calc(100% - 150px);}
+    100% {background-color: greenyellow;top: 0;left: calc(100% - 160px);}
 }
 
 body {
@@ -13,9 +13,59 @@ body {
 .exemplo {
     width: 150px;
     height: 150px;
-    position: absolute; /* para o objeto ficar flutuante */
+    position: relative; 
     background-color: green;
     animation-name: anim1;
     animation-duration: 6s;
-    animation-iteration-count: 2;
+    animation-iteration-count: 1;
+    /* inserindo uma sombra, tanto box quanto text
+    1) quantos px de sombra sai para a horizontal
+    < 0 sombra para esquerda, > 0 sombra para direita
+    2) mesmo que o anterior, mas vertical.
+    < 0 sombra para cima, > 0 sombra para baixo
+    3) quanto será espalhada a sombra
+    4) cor
+    */
+    box-shadow: 10px 10px 3px gray;
+}
+/* sombra em texto */
+.exemplo2 {
+    color: darkgreen;
+    width: 400px;
+    height: 100px;
+    margin: auto;
+    margin-top: 20px;
+    text-shadow: 1px 1px 2px black
+}
+/* transição */
+.exemplo3 {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-top: 10px;
+    /*adicionando ritmo de transição 
+    all: todas as propriedades
+    1s: demora 1 segundo
+    linear: será suave
+    */
+    transition: all 1s linear;
+}
+.exemplo3:hover {
+    background-color: blue;
+    width: 200px;
+    height: 100px;
+    margin: auto;
+    margin-top: 10px;
+}
+/* aplicando transição em link */
+a {
+    color: black;
+    font-size: 20px;
+    transition: all 1s linear;
+}
+a:hover {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
 }
